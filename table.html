@@ -1,0 +1,115 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table in json</title>
+    <style>
+        table,th, td {
+  border: 1px solid black;
+}
+    </style>
+  </head>
+
+  <body>
+    <!-- <script src="table.js"> 
+       
+        </script> -->
+    <table id="data_table">
+     
+    </table>
+    <script>
+        // alert("I am fuckig outsuide");
+      var student = [
+        {
+          "Student_name": "Murtajiz",
+          "age": " 23 ",
+          "Student_ID": "041",
+         "DEGREE": " CS "
+        }
+        ,
+        {
+          "Student_name": "Arsal",
+          "age": " 23 ",
+          "Student_ID": "041",
+         "DEGREE": " CS "
+        }
+        ,
+        {
+          "Student_name": "Murtajiz",
+          "age": " 23 ",
+          "Student_ID": "041",
+         "DEGREE": " CS "
+        }
+        ,
+        {
+          "Student_name": "Murtajiz",
+          "age": " 23 ",
+          "Student_ID": "041",
+         "DEGREE": " CS "
+        }
+        ,
+        {
+          "Student_name": "Murtajiz",
+          "age": " 23 ",
+          "Student_ID": "041",
+         "DEGREE": " CS "
+        }
+        ,
+        {
+          "Student_name": "Murtajiz",
+          "age": " 23 ",
+          "Student_ID": "041",
+         "DEGREE": " CS "
+        }
+        ,
+        {
+          "Student_name": "Murtajiz",
+          "age": " 23 ",
+          "Student_ID": "041",
+         "DEGREE": " CS "
+        }
+        ,
+        {
+          "Student_name": "Murtajiz",
+          "age": " 23 ",
+          "Student_ID": "041",
+         "DEGREE": " CS "
+        }
+        ,
+        {
+          "Student_name": "Murtajiz",
+          "age": " 23 ",
+          "Student_ID": "041",
+         "DEGREE": " CS "
+        }
+        ,
+        {
+          "Student_name": "Murtajiz",
+          "age": " 23 ",
+          "Student_ID": "041",
+         "DEGREE": " CS "
+        }
+        ,
+        {
+          "Student_name": "Murtajiz",
+          "age": " 23 ",
+          "Student_ID": "041",
+         "DEGREE": " CS "
+        }
+      ];
+      var data_table="<tr><th>Name</th><th>Age</th><th>Student</th><th>Degree</th></tr>";
+       for(var i=0;i<student.length;i++){
+         let name = student[i]["Student_name"];
+         let age = student[i]["age"];
+         let ID = student[i]["Student_ID"];
+         let Degree = student[i]["DEGREE"];
+         console.log(age);
+        //  debugger;
+         data_table=data_table+"<tr><td>"+name+"</td>"+"<td>"+age+"<td>"+ID+"<td>"+Degree+"</td></tr>";
+        // console.log(data_table);
+       }
+      console.log(data_table);
+       document.getElementById("data_table").innerHTML=data_table;
+    </script>
+  </body>
+</html>
