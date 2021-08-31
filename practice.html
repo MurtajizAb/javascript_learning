@@ -1,0 +1,28 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function limit(a = 1, b = 9) {
+        for (i = a; i <=b ; i++)
+          if (i == a) {
+            alert("lower limit");
+          }
+        if (i == b) {
+          alert("upper limit");
+        } else {
+          z = [i];
+          return z;
+        }
+
+        /* var z = Math.floor((Math.random() * (b - a + 1)) + a);
+        return z;*/
+      }
+      alert(limit());
+    </script>
+  </body>
+</html>
