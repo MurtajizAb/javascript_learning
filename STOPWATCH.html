@@ -1,0 +1,131 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content=
+        "width=device-width, 
+        initial-scale=1.0" />
+  
+    <title>Digital Clock</title>
+  
+    <style>
+        #clock {
+            font-size: 115px;
+            width: 900px;
+            margin: 200px;
+            text-align: center;
+            border: 2px solid black;
+            border-radius: 40px;
+        }
+    </style>
+</head>
+<body style="background-color: seagreen;">
+    <input type="datetime-local" id="text_box"  />
+    <button  onclick="storetime()">Set Alarm</button>
+   
+    
+   <div id = "clock">
+           2:30:15
+    </div> 
+
+    
+
+    <script>
+        // setInterval (Displaytime,1000)
+
+        function Displaytime(usertime)
+        {
+      //  alert("I am in display time functuib");
+        alert(usertime);
+         var time = new Date();
+         var Day = time.getDay();
+          var months= time.getUTCMonth();
+          var year = time.getUTCFullYear();
+          var hours = time.getUTCHours();
+          var min = time.getUTCMinutes();
+          var seconds = time.getUTCSeconds();
+          am_pm = "AM"; 
+         
+
+         /* if (hours > 12)
+          { 
+              hours = hours - 12;
+              am_pm = "PM";
+          }
+
+          if (hours==0)
+          {
+              hours= 12;
+              am_pm="AM";
+          }*/
+
+         
+
+          hours = hours<10? "0"+ hours:hours;
+          min = min<10? "0"+ min:min;
+          seconds = seconds<10?"0"+ seconds:seconds;
+
+          var currenttime=   Day + ":" + months + ":" + year + ":" +hours + ":"+ min +":"+ seconds;
+         
+          if (usertime==currenttime){
+ 
+               alert("Ring Alarm");
+
+                       }
+else{
+    console.log("I am in the comparison");
+   console.log("Not matched yet");
+   console.log("Current Time is"+currenttime.toString());
+   console.log("User Time is"+usertime.toString());
+}
+        //   document.getElementById ("clock").innerHTML =currenttime;
+
+          }
+        
+       function print_time()
+       { 
+         var user_time=document.getElementById("text_box").value;
+         var user_time = new Date();
+         var hr = user_time.getHours();
+         var mn = user_time.getMinutes();
+         var sek = user_time.getSeconds();
+         aM_pM = "AM";
+         var dy = user_time.getDay();
+         var mon = user_time.getMonth();
+         var yr = user_time.getFullYear();
+
+        /* if (hr > 12)
+          { 
+              hr = hr - 12;
+              aM_pM = "PM";
+          }
+
+          if (hr==0)
+          {
+              hr= 12;
+              aM_pM="AM";
+          }*/
+
+         
+
+          hr = hr<10? "0"+ hr:hr;
+          mn = mn<10? "0"+ mn:mn;
+          sek = sek<10?"0"+ sek:sek;
+
+          var newtime= hr + ":"+ mn +":"+ sek + ":" + dy + ":" + mon + ":" + yr;
+           alert(user_time);
+           return user_time;
+           
+       }
+
+     
+        function storetime(){
+          var x = print_time();
+          Displaytime(x);
+      }
+       
+   
+
+    </script>
+    
+</body>
+</html>
