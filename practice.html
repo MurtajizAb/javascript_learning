@@ -7,22 +7,29 @@
   </head>
   <body>
     <script>
-      function limit(a = 1, b = 9) {
-        for (i = a; i <=b ; i++)
-          if (i == a) {
-            alert("lower limit");
-          }
-        if (i == b) {
-          alert("upper limit");
-        } else {
-          z = [i];
-          return z;
+      
+      function limit(a,b) {
+          const process = require('process');
+          console.log("process.pid")
+       //time=new Date();
+       //mili=time.getMilliseconds();
+    //    mili=mili*1000;
+        /*while(mili>=b || mili<=a){
+         // mili=  mili/b;
+         if(mili>=b){
+             mili=mili/b;
+         }
+         else{
+             mili= mili + a;
+         }
+          console.log(mili);
         }
-
-        /* var z = Math.floor((Math.random() * (b - a + 1)) + a);
-        return z;*/
-      }
-      alert(limit());
+       var answer=(mili).toString();
+       var answer=answer.substring(0,3);
+       return answer;
+       }
+      
+    alert(limit(400,500));*/}
     </script>
   </body>
 </html>
