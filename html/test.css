@@ -1,0 +1,44 @@
+div{
+	 text-align: center;
+	 margin: 200px 500px 300px 500px;
+	 border:solid;
+	 
+	 padding: 30px 50px 100px 50px;
+	 
+	
+}
+.login_head{
+	 color: black;
+  font-family: verdana;
+  font-style: italic;
+  font-size: 80%;
+  text-align: left;
+  margin: 5px 5px 5px 10px;
+    padding: 5px 5px 5px 10px;
+}
+  body{
+	  background-image:url('https://cdn.pixabay.com/photo/2014/05/02/21/49/laptop-336373__340.jpg')
+}
+
+.search_bar{
+	
+	
+	outline:none;
+	border:none;
+	
+	
+	color: white;
+	margin: 5px 5px 5px 10px;
+    padding: 5px 5px 5px 10px;
+}
+}
+	
+
+#acc{
+      color: silver;
+  font-family: verdana;
+  font-style: italic;
+  
+  font-size: 100%;
+  
+}
